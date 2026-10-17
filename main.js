@@ -50,7 +50,8 @@
     img.loading = 'lazy';
     img.decoding = 'async';
     shot.appendChild(img);
-    if (!sold && p.added && p.added === newest) shot.appendChild(el('span', 'tag-new', 'New this week'));
+    if (!sold && p.special) shot.appendChild(el('span', 'tag-new tag-special', 'Special of the week'));
+    else if (!sold && p.added && p.added === newest) shot.appendChild(el('span', 'tag-new', 'New this week'));
     var stamp = el('span', 'stamp');
     stamp.setAttribute('aria-hidden', 'true');
     stamp.setAttribute('lang', 'zh');
@@ -69,9 +70,10 @@
       row.appendChild(el('span', 'soon', 'Sold'));
     } else if (p.price) {
       row.appendChild(el('span', 'price', '$' + p.price));
-      if (SITE.shopOpen && p.buyUrl) {
+      var buyHref = p.buyUrl || SITE.storeUrl;
+      if (SITE.shopOpen && buyHref) {
         var buy = el('a', 'btn btn-solid btn-buy', 'Buy');
-        buy.href = p.buyUrl;
+        buy.href = buyHref;
         buy.setAttribute('aria-label', 'Buy ' + (p.title || 'this painting') + ' for $' + p.price);
         row.appendChild(buy);
       } else {
@@ -107,13 +109,17 @@
       apply('available');
     }
   }
+  if (SITE.shopOpen && SITE.storeUrl) {
+    $$('[data-site="store-link"]').forEach(function (a) { a.href = SITE.storeUrl; });
+    $$('[data-site="store-cta"]').forEach(function (n) { n.hidden = false; });
+  }
   var shopNotice = $('[data-site="shop-closed"]');
   if (shopNotice && !SITE.shopOpen) shopNotice.hidden = false;
 
   var newGrid = $('#new-grid');
   if (newGrid) {
     var fresh = SHOP.filter(function (p) { return p.status !== 'sold'; })
-      .sort(function (a, b) { return (b.added || '').localeCompare(a.added || ''); })
+      .sort(function (a, b) { return ((b.special ? 1 : 0) - (a.special ? 1 : 0)) || (b.added || '').localeCompare(a.added || ''); })
       .slice(0, 4);
     if (fresh.length) fresh.forEach(function (p) { newGrid.appendChild(card(p)); });
     else { var sec = newGrid.closest('section'); if (sec) sec.hidden = true; }

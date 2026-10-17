@@ -2,11 +2,14 @@
 
 window.SITE = {
 
-  // Turn the Buy buttons on: change false to true once your Square links are in shop-data.js
-  shopOpen: false,
+  // Buy buttons on (true) or off (false)
+  shopOpen: true,
+
+  // Your Square store page. Every Buy and Shop button goes here.
+  storeUrl: "https://traditional-chinese-watercolor-paintings.square.site/s/shop",
 
   // Shown on the Shop page under "Shipping"
-  deliveryNote: "We ship within the US. Shipping is added at checkout, and we'll email you a tracking number once your painting is on its way. You can also pick it up at one of our events.",
+  deliveryNote: "Shipping is a flat $12 per order within the US, no matter how many paintings you buy. Local pickup is also available at checkout. We'll email you a tracking number once your order ships.",
 
   // Optional. Leave "" to hide it.
   contactEmail: "",

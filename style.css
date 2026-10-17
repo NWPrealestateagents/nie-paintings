@@ -226,3 +226,8 @@ details.past .event{opacity:.72}
   .tag-new{font-size:.74rem;top:.45rem;left:.45rem}
   .stamp{font-size:1rem}
 }
+
+.tag-special{background:var(--seal)}
+
+.store-cta{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem 2rem;border:1.5px solid var(--jade);background:rgba(43,103,98,.06);padding:1.1rem 1.4rem;margin:0 0 1.75rem}
+.store-cta p{margin:0;max-width:40rem}

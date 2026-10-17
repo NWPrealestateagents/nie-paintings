@@ -10,6 +10,7 @@
 //            Use null if you have not decided yet.
 //   buyUrl   the Square payment link for this painting, e.g. "https://square.link/u/abc123"
 //   status   "available" or "sold"
+//   special  true adds a "Special of the week" tag and puts it first (optional)
 //   added    date it went up, like "2026-10-18". The newest date gets the "New this week" tag.
 //
 // Weekly restock: copy a line, paste it at the TOP of the list, change the details.
@@ -20,6 +21,8 @@
 //  { id: "s2", image: "s2.jpg", title: "Mountain landscape", type: "Large scroll", size: "", price: 120, buyUrl: "", status: "available", added: "2026-10-18" },
 
 window.SHOP = [
+  { id: "n11", title: "Mountain peak with a pavilion", type: "Scroll", size: "", price: 50, buyUrl: "", status: "available", added: "2026-10-16", special: true },
+  { id: "n12", title: "Misty mountains and a hillside temple", type: "Scroll", size: "", price: 50, buyUrl: "", status: "available", added: "2026-10-16", special: true },
   { id: "n01", title: "Three birds flying over pines", type: "Unframed", size: "", price: 35, buyUrl: "", status: "available", added: "2026-10-16" },
   { id: "n02", title: "Pheasants among pines", type: "Unframed", size: "", price: 35, buyUrl: "", status: "available", added: "2026-10-16" },
   { id: "n03", title: "Pheasants on a pine branch", type: "Unframed", size: "", price: 35, buyUrl: "", status: "available", added: "2026-10-16" },
@@ -30,8 +33,6 @@ window.SHOP = [
   { id: "n08", title: "Ducks swimming under a willow", type: "Unframed", size: "", price: 35, buyUrl: "", status: "available", added: "2026-10-16" },
   { id: "n09", title: "Magpies on a blossoming plum branch", type: "Unframed", size: "", price: 35, buyUrl: "", status: "available", added: "2026-10-16" },
   { id: "n10", title: "Two birds in a glowing forest", type: "Unframed", size: "", price: 35, buyUrl: "", status: "available", added: "2026-10-16" },
-  { id: "n11", title: "Mountain peak with a pavilion", type: "Scroll", size: "", price: 50, buyUrl: "", status: "available", added: "2026-10-16" },
-  { id: "n12", title: "Misty mountains and a hillside temple", type: "Scroll", size: "", price: 50, buyUrl: "", status: "available", added: "2026-10-16" },
   { id: "2338", title: "Steep green gorge with mist and a small boat", type: "Unframed", size: "", price: 35, buyUrl: "", status: "available", added: "" },
   { id: "2349", title: "Two herons among lotus flowers", type: "Unframed", size: "", price: 35, buyUrl: "", status: "available", added: "" },
   { id: "2342", title: "Two red-crowned cranes standing among reeds", type: "Unframed", size: "", price: 35, buyUrl: "", status: "available", added: "" },
