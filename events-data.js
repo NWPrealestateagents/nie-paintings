@@ -27,5 +27,20 @@
 //   },
 
 window.EVENTS = [
-
+  {
+    date: "2026-10-24",
+    title: "Kids Market, Manassas",
+    place: "Prince William Street Parking Lot",
+    time: "8am to 1pm",
+    address: "9024 Prince William St, Manassas, VA 20110",
+    note: "Come see the paintings in person. Card, Venmo and Zelle accepted."
+  },
+  {
+    date: "2026-11-14",
+    title: "Kids Market, Fair Oaks Mall",
+    place: "Fair Oaks Mall",
+    time: "11am to 4pm",
+    address: "11750 Fair Oaks Mall, Fairfax, VA 22033",
+    note: "Come see the paintings in person. Card, Venmo and Zelle accepted."
+  },
 ];
