@@ -1,10 +1,15 @@
 // Keeps the slideshow working with no internet after the first visit.
-var CACHE = 'nie-slideshow-v2';
+var CACHE = 'nie-slideshow-v3';
 var ASSETS = [
  "slideshow.html",
  "manifest.webmanifest",
  "apple-touch-icon.png",
  "favicon.svg",
+ "full-n13.jpg",
+ "full-n14.jpg",
+ "full-n15.jpg",
+ "full-n16.jpg",
+ "full-n17.jpg",
  "full-n01.jpg",
  "full-n02.jpg",
  "full-n03.jpg",
@@ -14,7 +19,6 @@ var ASSETS = [
  "full-n07.jpg",
  "full-n08.jpg",
  "full-n09.jpg",
- "full-n10.jpg",
  "full-n11.jpg",
  "full-n12.jpg",
  "full-2338.jpg",
@@ -26,7 +30,6 @@ var ASSETS = [
  "full-2351.jpg",
  "full-2335.jpg",
  "full-2333.jpg",
- "full-2347.jpg",
  "full-2343.jpg",
  "full-2354.jpg",
  "full-2334.jpg",
