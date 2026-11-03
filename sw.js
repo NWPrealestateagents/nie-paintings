@@ -1,5 +1,5 @@
 // Keeps the slideshow working with no internet after the first visit.
-var CACHE = 'nie-slideshow-v3';
+var CACHE = 'nie-slideshow-v4';
 var ASSETS = [
  "slideshow.html",
  "manifest.webmanifest",
@@ -29,12 +29,10 @@ var ASSETS = [
  "full-2353.jpg",
  "full-2351.jpg",
  "full-2335.jpg",
- "full-2333.jpg",
  "full-2343.jpg",
  "full-2354.jpg",
  "full-2334.jpg",
  "full-2345.jpg",
- "full-2344.jpg",
  "full-2352.jpg"
 ];
 self.addEventListener('install', function (e) {
