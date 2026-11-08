@@ -1,5 +1,5 @@
 // Keeps the slideshow working with no internet after the first visit.
-var CACHE = 'nie-slideshow-v4';
+var CACHE = 'nie-slideshow-v6';
 var ASSETS = [
  "slideshow.html",
  "manifest.webmanifest",
@@ -7,7 +7,6 @@ var ASSETS = [
  "favicon.svg",
  "full-n13.jpg",
  "full-n14.jpg",
- "full-n15.jpg",
  "full-n16.jpg",
  "full-n17.jpg",
  "full-n01.jpg",
